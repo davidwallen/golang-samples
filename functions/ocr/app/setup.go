@@ -103,7 +103,7 @@ func setup(ctx context.Context) error {
 	if pubsubClient == nil {
 		pubsubClient, err = pubsub.NewClient(ctx, config.ProjectID)
 		if err != nil {
-			return fmt.Errorf("translate.NewClient: %v", err)
+			return fmt.Errorf("pubsub.NewClient: %v", err)
 		}
 	}
 
